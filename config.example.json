@@ -1,0 +1,28 @@
+{
+  "base_url": "https://helpdesk.example.com/support-ticket",
+  "tickets_dir": "C:/Users/<you>/Documents/tickets",
+  "context_dir": "",
+  "token": "",
+  "headers": {},
+  "ticket_pattern": "^[A-Za-z0-9][A-Za-z0-9-]{3,40}$",
+  "email_body_suffix": "_email_body.html",
+  "endpoints": {
+    "detail": "/detail/{ticket}/",
+    "file": "/file/{ticket}/{file}/",
+    "attachment_list": "/file/{ticket}/{stem}_email_attachments/",
+    "attachment": "/attachment/{ticket}/{stem}_email_attachments/{file}/"
+  },
+  "fields": {
+    "status_key": "RESP",
+    "status_ok": "OK",
+    "data_key": "DATA",
+    "thread_id": "ThreadID",
+    "action": "ThreadAction",
+    "author": "CreatedByName",
+    "created": "CreatedOn",
+    "note": "TicketNote",
+    "files": "Attachments",
+    "file_url": "url",
+    "file_name": "name"
+  }
+}

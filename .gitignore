@@ -1,0 +1,8 @@
+# Downloaded tickets hold customer emails: never commit them.
+tickets/
+
+# Each PC writes its own paths (and maybe a token) here (install.py).
+config.json
+
+__pycache__/
+*.pyc
