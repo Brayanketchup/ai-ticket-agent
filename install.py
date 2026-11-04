@@ -38,8 +38,8 @@ def render_skill(template, cfg, user="the user"):
 
 
 def main(argv=None):
-    if sys.version_info < (3, 8):
-        raise SystemExit("Python 3.8 or newer is needed.")
+    if sys.version_info < (3, 10):
+        raise SystemExit("Python 3.10 or newer is needed.")
     sys.path.insert(0, str(HERE))
     import ticket_fetch
 

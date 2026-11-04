@@ -1,7 +1,7 @@
 """Download a support ticket (threads, email text, embedded screenshots, attachments) into
 <tickets_dir>/<ticket>/ and write ticket.md, a compact text version an AI assistant can read cheaply.
 
-Read-only: it only sends GET requests to the ticket service. Python 3.8+, no packages needed.
+Read-only: it only sends GET requests to the ticket service. Python 3.10+, no packages needed.
 
     python ticket_fetch.py ABC123-45678
     python ticket_fetch.py ABC123-45678 --out D:\\tickets

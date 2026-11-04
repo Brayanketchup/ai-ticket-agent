@@ -3,7 +3,7 @@
 **Turn a support ticket number into a tested root-cause report.** `ai-ticket-agent` downloads a helpdesk ticket (threads, emails, screenshots, attachments), compresses it into a small Markdown file an AI coding assistant can read, and gives the assistant a step-by-step investigation playbook with built-in safety rails: read-only by default, prompt-injection aware, and a mandatory human confirmation before any live database change.
 
 [![tests](https://github.com/Brayanketchup/ai-ticket-agent/actions/workflows/tests.yml/badge.svg)](https://github.com/Brayanketchup/ai-ticket-agent/actions/workflows/tests.yml)
-![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue)
+![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 ![No dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
@@ -58,7 +58,7 @@ skill/SKILL.md playbook, followed by your AI coding assistant:
 
 ## Features
 
-- **Zero dependencies.** One Python file, standard library only, Python 3.8+.
+- **Zero dependencies.** One Python file, standard library only, Python 3.10+.
 - **Context-efficient output.** HTML emails become plain text; the first 6,000 characters go into `ticket.md`, the full text into `text/`.
 - **Screenshot extraction.** Inline base64 images are saved as files with their size and dimensions. Icons under 4 KB and duplicates (by SHA-1) are skipped.
 - **Attachment download.** Thread files and per-email attachments, with safe file names (path traversal blocked).
@@ -69,7 +69,7 @@ skill/SKILL.md playbook, followed by your AI coding assistant:
 
 ## Quick start
 
-Requirements: Python 3.8+ and an AI coding assistant that loads `SKILL.md` playbooks from a skills folder.
+Requirements: Python 3.10+ and an AI coding assistant that loads `SKILL.md` playbooks from a skills folder.
 
 ```bash
 git clone https://github.com/Brayanketchup/ai-ticket-agent.git
