@@ -9,6 +9,8 @@
 
 > **In one sentence:** you say *"look at ticket ABC123-45678"*, and your AI assistant fetches it, separates data problems from code bugs, finds the code behind the error, checks the data read-only, reproduces it in the browser read-only, and reports the cause, the evidence, the exact fix and how to verify it.
 
+**Live demo:** none, it's a command-line tool plus an assistant playbook. **Stack:** Python 3.10+ (standard library only), unittest, GitHub Actions CI. Sample output: [`examples/report.md`](examples/report.md).
+
 ---
 
 ## Table of contents
